@@ -3,7 +3,7 @@ import React from 'react';
 import { FirstAndSecond, Header } from './components';
 import { GlobalStyles, Main, Section, Sticky } from './styles';
 
-function App() {
+const App: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -27,6 +27,6 @@ function App() {
       </Main>
     </>
   );
-}
+};
 
 export default App;
